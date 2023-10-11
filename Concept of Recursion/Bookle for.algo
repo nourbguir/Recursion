@@ -1,0 +1,19 @@
+
+PROCEDURE Test_pala(parameters)
+VAR
+    ph:STRING;
+    i,n : INTEGER ;
+
+    n:= ph.longuer-1 ;
+
+BEGIN
+  FOR i FROM 0 TO n STEP step 1 DO
+        IF (ph{i}=ph{n}) THEN
+         n := n-1 ;
+    ELSE
+         write('le mot est n''est pas plindrome');
+  END_IF
+    
+  END_FOR
+         write(' le mot est plindrome');
+END

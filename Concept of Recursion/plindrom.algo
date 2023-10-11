@@ -1,0 +1,19 @@
+ALGORITHM plandromerec(ph : STRING,i,j :INTEGER) : BOOLEAN
+
+VAR
+    res : BOOLEAN ;//selectio de variable 
+BEGIN
+    IF (ph{i}<>ph{j})THEN
+    write('le mot n''est pas palindrome');//thas mot no palindrom
+
+    ELSE
+    IF (i=j) THEN
+            write(' le mot est palindrome');//thats mot palidrom
+        
+    ELSE
+    res := palindrome(ph,i+1,j-1);
+    END_IF 
+END_IF
+RETURN res;
+
+END
